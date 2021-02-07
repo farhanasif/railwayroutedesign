@@ -75,7 +75,7 @@
               <div class="inner">
                 <h3>15</h3>
 
-                <p>Currently Moving Train</p>
+                <p>Currently Moving Trains</p>
               </div>
               <div class="icon">
                 <i class="ion ion-pie-graph"></i>
@@ -89,7 +89,7 @@
 
 
         <div class="row">
-          <div class="col-lg-12">
+          <div class="col-lg-8">
             <div class="card">
               <div class="card-header border-0">
                 <div class="d-flex justify-content-between">
@@ -103,6 +103,80 @@
             </div>
             <!-- /.card -->
           </div>
+          <div class="col-lg-4">
+            <div class="card">
+                <div class="card-header border-transparent">
+                  <h3 class="card-title">Latest Train Activity</h3>
+
+                  <div class="card-tools">
+                    <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                      <i class="fas fa-minus"></i>
+                    </button>
+                    <button type="button" class="btn btn-tool" data-card-widget="remove">
+                      <i class="fas fa-times"></i>
+                    </button>
+                  </div>
+                </div>
+                <!-- /.card-header -->
+                <div class="card-body p-0">
+                  <div class="table-responsive">
+                    <table class="table m-0">
+                      <thead>
+                      <tr>
+                        <th>Train No</th>
+                        <th>Name</th>
+                        <th>Last Update</th>
+                        <th>Last Update Time</th>
+                      </tr>
+                      </thead>
+                      <tbody>
+                      <tr>
+                        <td><a href="#">795</a></td>
+                        <td>Benapole Express</td>
+                        <td><span class="badge badge-success">Tangail</span></td>
+                        <td>
+                          <div class="sparkbar" data-color="#00a65a" data-height="20">09:05 AM</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><a href="#">796</a></td>
+                        <td>Benapole Express</td>
+                        <td><span class="badge badge-success">Mouchak</span></td>
+                        <td>
+                          <div class="sparkbar" data-color="#00a65a" data-height="20">09:05 AM</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><a href="#">757</a></td>
+                        <td>Drutajan Express</td>
+                        <td><span class="badge badge-success">Bangabondhu Setu/East</span></td>
+                        <td>
+                          <div class="sparkbar" data-color="#00a65a" data-height="20">09:05 AM</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><a href="#">797</a></td>
+                        <td>Kurigram Express</td>
+                        <td><span class="badge badge-success">Biman Bandar</span></td>
+                        <td>
+                          <div class="sparkbar" data-color="#00a65a" data-height="20">09:05 AM</div>
+                        </td>
+                      </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <!-- /.table-responsive -->
+                </div>
+                <!-- /.card-body -->
+                <div class="card-footer clearfix">
+                  <a href="javascript:void(0)" class="btn btn-sm btn-secondary float-right">View All Routes</a>
+                </div>
+                <!-- /.card-footer -->
+              </div>
+              <!-- /.card -->
+            </div>
+            <!-- /.col -->
+          </div>
         </div>
 
     </section>
@@ -115,17 +189,17 @@
           type: 'line'
       },
       title: {
-          text: 'Monthly Average Temperature'
+          text: 'Monthly Average Hours'
       },
       subtitle: {
-          text: 'Source: WorldClimate.com'
+          text: 'Source: Bangladesh Railway'
       },
       xAxis: {
-          categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+          categories: [ 'Mar 2020', 'Apr  2020', 'May  2020', 'Jun 2020', 'Jul 2020', 'Aug 2020', 'Sep 2020', 'Oct 2020', 'Nov 2020', 'Dec 2020', 'Jan 2021', 'Feb 2021',]
       },
       yAxis: {
           title: {
-              text: 'Temperature (°C)'
+              text: 'Hours'
           }
       },
       plotOptions: {
@@ -137,11 +211,11 @@
           }
       },
       series: [{
-          name: 'Tokyo',
-          data: [7.0, 6.9, 9.5, 14.5, 18.4, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6]
+          name: '796',
+          data: [117.0, 126.9, 129.5, 164.5, 218.4, 211.5, 125.2, 126.5, 223.3, 218.3, 113.9, 79.6]
       }, {
-          name: 'London',
-          data: [3.9, 4.2, 5.7, 8.5, 11.9, 15.2, 17.0, 16.6, 14.2, 10.3, 6.6, 4.8]
+          name: '793',
+          data: [213.9, 214.2, 225.7, 228.5, 161.9, 215.2, 167.0, 216.6, 184.2, 210.3, 216.6, 74.8]
       }]
     });
   </script>
