@@ -59,10 +59,10 @@
       </form>
 
       <div class="social-auth-links text-center mt-2 mb-3">
-        <a href="#" class="btn btn-block btn-primary">
+        <a href="./control/home.php" class="btn btn-block btn-primary">
             Sign in as control Panel
         </a>
-        <a href="#" class="btn btn-block btn-danger">
+        <a href="./control/home.php" class="btn btn-block btn-danger">
            Sign in as Mouchak Station Master
         </a>
       </div>

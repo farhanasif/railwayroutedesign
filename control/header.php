@@ -141,31 +141,92 @@
             </li>
             <li class="nav-item">
                 <a href="#" class="nav-link">
-                <i class="nav-icon fas fa-tachometer-alt"></i>
+                <i class="nav-icon fas fa-bacon"></i>
+                <p>
+                    Current Activity
+                </p>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-cog"></i>
                 <p>
                     Master Data
                     <i class="right fas fa-angle-left"></i>
                 </p>
                 </a>
                 <ul class="nav nav-treeview">
-                <li class="nav-item">
-                    <a href="#" class="nav-link">
-                    <i class="far fa-circle nav-icon"></i>
-                    <p>Trains</p>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">
-                    <i class="far fa-circle nav-icon"></i>
-                    <p>Routes</p>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">
-                    <i class="far fa-circle nav-icon"></i>
-                    <p>Station Masters</p>
-                    </a>
-                </li>
+                  <li class="nav-item">
+                      <a href="#" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Trains</p>
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="#" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Routes</p>
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="#" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Station Masters</p>
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="#" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Staffs</p>
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="#" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Staffs per Train</p>
+                      </a>
+                  </li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-file-alt"></i>
+                <p>
+                    Reports
+                    <i class="right fas fa-angle-left"></i>
+                </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                      <a href="#" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Staff KPI Report</p>
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="#" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Train KPI Report</p>
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="#" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Station Masters Report</p>
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="#" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Example Report</p>
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="#" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Staffs per Train</p>
+                      </a>
+                  </li>
                 </ul>
             </li>
         </ul>
