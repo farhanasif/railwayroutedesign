@@ -89,7 +89,7 @@
 
 
         <div class="row">
-          <div class="col-lg-8">
+          <div class="col-lg-6">
             <div class="card">
               <div class="card-header border-0">
                 <div class="d-flex justify-content-between">
@@ -103,7 +103,7 @@
             </div>
             <!-- /.card -->
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-6">
             <div class="card">
                 <div class="card-header border-transparent">
                   <h3 class="card-title">Latest Train Activity</h3>
