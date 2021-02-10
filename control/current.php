@@ -46,7 +46,9 @@
             scrollablePlotArea: {
                 minWidth: 600,
                 scrollPositionX: 1
-            }
+            },
+            height: 640,
+            chartWidth: 740
         },
         title: {
             text: 'Current Train Location',
