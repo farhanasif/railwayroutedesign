@@ -2,25 +2,8 @@
 
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
-    <!-- Content Header (Page header) -->
-    <section class="content-header">
-      <div class="container-fluid">
-        <div class="row mb-2">
-          <div class="col-sm-6">
-            <h1>Current Activity</h1>
-          </div>
-          <div class="col-sm-6">
-            <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Current Activity</li>
-            </ol>
-          </div>
-        </div>
-      </div><!-- /.container-fluid -->
-    </section>
-
     <!-- Main content -->
-    <section class="content">
+    <section class="content pt-3">
 
      <!-- Small boxes (Stat box) -->
      <div class="row">
@@ -51,7 +34,7 @@
             chartWidth: 740
         },
         title: {
-            text: 'Current Train Location',
+            text: 'Current Trains Activity',
             align: 'left'
         },
         subtitle: {
