@@ -22,236 +22,134 @@
   </div>
   <!-- /.content-wrapper -->
   <script>
-
-    Highcharts.chart('container', {
+    Highcharts.chart('container',{
         chart: {
-            type: 'spline',
-            scrollablePlotArea: {
-                minWidth: 600,
-                scrollPositionX: 1
-            },
+            type: 'line',
+            spacingBottom: 30,
             height: 640,
-            chartWidth: 740
         },
         title: {
-            text: 'Current Trains Activity',
-            align: 'left'
+            text: 'Current Activity of Trains'
         },
-        subtitle: {
-            text: '8th February 2021, 11:35 am',
-            align: 'left'
+
+        legend: {
+            enabled: true
         },
         xAxis: {
-            type: 'datetime',
-            labels: {
-                overflow: 'justify'
-            }
+            categories: [
+                '08:00',
+                '08:05',
+                '08:10',
+                '08:15',
+                '08:20',
+                '08:25',
+                '08:30',
+                '08:35',
+                '08:40',
+                '08:45',
+                '08:50',
+                '08:55',
+                '09:00',
+                '09:05',
+                '09:10',
+                '09:15',
+                '09:20',
+                '09:25',
+                '09:30',
+                '09:35',
+                '09:40',
+                '09:45',
+                '09:50',
+                '09:55',
+                '10:00',
+                '10:05',
+                '10:10',
+                '10:15',
+                '10:20',
+                '10:25',
+                '10:30',
+                '10:35',
+                '10:40',
+                '10:45',
+                '10:50',
+                '10:55',
+            ]
         },
         yAxis: {
-            title: {
-                text: 'Location'
-            },
-            minorGridLineWidth: 0,
-            gridLineWidth: 0,
-            alternateGridColor: null,
-            plotBands: [{ // MOUCHAK
-                from: 362.20,
-                to: 341.41,
-                color: 'rgba(68, 170, 213, 0.1)',
-                label: {
-                    text: 'MOUCHAK',
-                    style: {
-                        color: '#606060'
-                    }
+             categories: [
+                'ISHURDI JN',
+                'ISHURDI BY PASS',
+                'MAJHGRAM JN',
+                'MOOLADULI',
+                'GAFURABAD',
+                'CHATMOHAR',
+                'GOOAKHORA',
+                'BHANGOORA',
+                'BARAL BRIDGE',
+                'SARATNAGAR',
+                'DILPASHAR',
+                'LAHIRI MOHANPUR',
+                'ULLAPARA',
+                'SALOP',
+                'JAMTOIL',
+                'SHAHID M MONSUR ALI',
+                'BANGABANDHU SETU/WEST',
+                'BANGABANDHU SETU/EAST',
+                'TANGAIL',
+                'MOHERA',
+                'MIRZAPUR',
+                'HI-TECH CITY',
+                'MOUCHAK'
+            ],
+
+            labels: {
+                formatter: function () {
+                    return this.value;
                 }
-            }, { // Light breeze
-                from: 341.40,
-                to: 331.25,
-                color: 'rgba(0, 0, 0, 0)',
-                label: {
-                    text: 'MIRZAPUR',
-                    style: {
-                        color: '#606060'
-                    }
-                }
-            }, { // Gentle breeze
-                from: 331.24,
-                to: 315.51,
-                color: 'rgba(68, 170, 213, 0.1)',
-                label: {
-                    text: 'MOHERA',
-                    style: {
-                        color: '#606060'
-                    }
-                }
-            }, { // Moderate breeze
-                from: 315.50,
-                to: 294.91,
-                color: 'rgba(0, 0, 0, 0)',
-                label: {
-                    text: 'TANGAIL',
-                    style: {
-                        color: '#606060'
-                    }
-                }
-            }, { // Fresh breeze
-                from: 294.90,
-                to: 285.41,
-                color: 'rgba(68, 170, 213, 0.1)',
-                label: {
-                    text: 'BANGABANDHU SETU/EAST',
-                    style: {
-                        color: '#606060'
-                    }
-                }
-            }, { // Strong breeze
-                from: 285.40,
-                to: 281.1,
-                color: 'rgba(0, 0, 0, 0)',
-                label: {
-                    text: 'BANGABANDHU SETU/WEST',
-                    style: {
-                        color: '#606060'
-                    }
-                }
-            }, { // High wind
-                from: 281.0,
-                to: 274.4,
-                color: 'rgba(68, 170, 213, 0.1)',
-                label: {
-                    text: 'SHAHID M MONSUR ALI',
-                    style: {
-                        color: '#606060'
-                    }
-                }
-            },{ // High wind
-                from: 274.50,
-                to: 267.4,
-                color: 'rgba(68, 170, 213, 0.1)',
-                label: {
-                    text: 'JAMTOIL',
-                    style: {
-                        color: '#606060'
-                    }
-                }
-            },{ // High wind
-                from: 267.3,
-                to: 264,
-                color: 'rgba(68, 170, 213, 0.1)',
-                label: {
-                    text: 'SALOP',
-                    style: {
-                        color: '#606060'
-                    }
-                }
-            },{ // High wind
-                from: 263,
-                to: 256,
-                color: 'rgba(68, 170, 213, 0.1)',
-                label: {
-                    text: 'ULLAPARA',
-                    style: {
-                        color: '#606060'
-                    }
-                }
-            },{ // High wind
-                from: 255,
-                to: 252,
-                color: 'rgba(68, 170, 213, 0.1)',
-                label: {
-                    text: 'LAHIRI MOHANPUR',
-                    style: {
-                        color: '#606060'
-                    }
-                }
-            },{ // High wind
-                from: 251,
-                to: 247,
-                color: 'rgba(68, 170, 213, 0.1)',
-                label: {
-                    text: 'DILPASHAR',
-                    style: {
-                        color: '#606060'
-                    }
-                }
-            },{ // High wind
-                from: 246,
-                to: 242,
-                color: 'rgba(68, 170, 213, 0.1)',
-                label: {
-                    text: 'BARAL BRIDGE',
-                    style: {
-                        color: '#606060'
-                    }
-                }
-            },{ // High wind
-                from: 240,
-                to: 237,
-                color: 'rgba(68, 170, 213, 0.1)',
-                label: {
-                    text: 'BHANGOORA',
-                    style: {
-                        color: '#606060'
-                    }
-                }
-            },{ // High wind
-                from: 236,
-                to: 231,
-                color: 'rgba(68, 170, 213, 0.1)',
-                label: {
-                    text: 'GOOAKHORA',
-                    style: {
-                        color: '#606060'
-                    }
-                }
-            },{ // High wind
-                from: 230,
-                to: 226,
-                color: 'rgba(68, 170, 213, 0.1)',
-                label: {
-                    text: 'CHATMOHOR',
-                    style: {
-                        color: '#606060'
-                    }
-                }
-            }]
+            }
+        },
+
+        plotOptions: {
+            line: {
+                fillOpacity: 0.4
+            }
+        },
+        credits: {
+            enabled: false
         },
         tooltip: {
-            valueSuffix: ' KM'
-        },
-        plotOptions: {
-            spline: {
-                lineWidth: 4,
-                states: {
-                    hover: {
-                        lineWidth: 5
-                    }
-                },
-                marker: {
-                    enabled: false
-                },
-                pointInterval: 300000, // one hour
-                pointStart: Date.UTC(2021, 2, 8, 8, 0, 0)
-            }
+          enabled: true
         },
         series: [{
-            name: '759 Padma Express',
-            data: [
-                362, 361,355,350,340,338,330,321,319,312, 300, 295,295,295,284,281,277,273,270,265,263,254,254,248,243,243,239,239,228,228
-            ]
+                name: '770 - Dumkatu Express',
+                data: [null, null, 2, 1, 0, 1, 2, 3, 4, 5, 5, 5, 6, 7, 7, 8, 9, 10, 11, 12, 13, 14, 15, 15.5, 16, 17],
+               marker: {
+                      fillColor: '#00674C'
+                   }
+                },
+                 {
+                name: '757 - Drutajan Express',
+                data: [14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 4, 3, 2, 1, 0, 1, 2, 2, 2, 3, 3, 4, 5, 6, 6.5, 7],
+               marker: {
+                      fillColor: '#E72D41'
+                   }
+                },
+                 {
+                name: '797 - Kurigram Express',
+                data: [16, 16, 16, 15, 14, 13.5, 13,12, 11, 10.5, 10, 9, 8, 7, 6, 5, 4, 3, 2,1, 0, 1, 2, 2.5, 3],
+               marker: {
+                      fillColor: ' #212321'
+                   }
+                },
+                 {
+                name: '751 - Lalmoni Express',
+                data: [19,18.2, 18,17.5, 17.3, 17, 16.5, 16, 16, 16, 16, 15.5, 15,14.5, 14, 13, 12, 11.5,11,11, 11, 10,9,8.5, 8, 7],
+               marker: {
+                      fillColor: ' #212321'
+                   }
+                }
 
-        }, {
-            name: '757 Drutajan Express',
-            data: [
-                331, 314,296,292,289,287,285, 284, 284,284, 279,273,267,261,254,248,243,239,239,239,233,233,228
             ]
-
-        }],
-        navigation: {
-            menuItemStyle: {
-                fontSize: '10px'
-            }
-        }
     });
   </script>
 
